@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sliding Menu</title>
+</head>
+<body>
+    <!-- Menu Toggle Button -->
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <header>
+        <div  class="header-bar">
+
+    
+    <!-- Sliding Menu -->
+    <nav id="sliding-menu" class="sliding-menu">
+        <ul>
+            <li><a href="acceil.html">Accueil</a></li>
+            <li><a href="propos.html">À propos</a>
+                <ul class="dropdown">
+                    <li><a href="present.html">Présentation</a></li>
+                    <li><a href="mission.html">Mission, vision et valeurs</a></li>
+                    <li><a href="histoire.html">Histoire et engagements</a></li>
+                    <li><a href="equipe.html">Équipe (fonction, contact IPSAS)</a></li>
+                    <li><a href="parte.html">Partenaires</a></li>
+                </ul>
+            </li>
+            <li><a href="nosformation.html">Nos Formations</a>
+                <ul class="dropdown">
+                    <li><a href="#">Cycle d'Ingénieurs : Génie Pétrolier, Informatique, Civil, Industriel, Électromécanique, Électrotechnique, Énergétique…</a></li>
+                    <li><a href="#">Masters Professionnels : Génie de l'Environnement, Sécurité et Qualité</a></li>
+                    <li><a href="#">Licences : Génie Mécanique, Informatique de Gestion</a></li>
+                    <li><a href="#">Cycle Préparatoire : Math-Physique, Physique-Technique, Physique-Chimie</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vie Étudiante</a>
+                <ul class="dropdown">
+                    <li><a href="#">Activités et événements (calendrier interactif)</a></li>
+                    <li><a href="#">Clubs étudiants (création et adhésion)</a></li>
+                    <li><a href="#">Placement international et stages</a></li>
+                    <li><a href="#">Témoignages étudiants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Admission</a>
+                <ul class="dropdown">
+                    <li><a href="#">Critères et processus d'admission</a></li>
+                    <li><a href="#">Frais de scolarité</a></li>
+                    <li><a href="#">FAQ Admission</a></li>
+                    <li><a href="#">Paiement en ligne (pour les étudiants tunisiens et étrangers)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Podcast POLY'CAST</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">Actualités et Événements</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Espace Membres</a></li>
+        </ul>
+    </nav>
+</header>
+</div>
+    <!-- Rest of your content -->
+     
+    <section class="hero">
+        <!-- Video Background -->
+        <video autoplay muted loop id="hero-video">
+            <source src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free.mp4" type="video/mp4">
+            <source src="https://coverr.co/videos/city-traffic-at-night-HDpriy0l7g" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Bienvenue à IPSAS</h1>
+            <p>Votre avenir commence ici. Découvrez nos formations, notre vie étudiante et nos opportunités.</p>
+            <a href="#formations" class="btn">Découvrir nos formations</a>
+        </div>
+    </section>
+
+<!-- Nos Formations Section -->
+<section class="programs">
+    <h2>Nos Formations</h2>
+    <p class="subtitle">Découvrez nos programmes d'études conçus pour vous préparer à une carrière réussie.</p>
+
+    <div class="program-container">
+        <!-- Cycle d'Ingénieurs -->
+        <div class="program-card">
+            <div class="program-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Cycle d'Ingénieurs</h3>
+            <ul>
+                <li>Génie Pétrolier</li>
+                <li>Informatique</li>
+                <li>Civil</li>
+                <li>Industriel</li>
+                <li>Électromécanique</li>
+                <li>Électrotechnique</li>
+                <li>Énergétique</li>
+            </ul>
+        </div>
+
+        <!-- Masters Professionnels -->
+        <div class="program-card">
+            <div class="program-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Masters Professionnels</h3>
+            <ul>
+                <li>Génie de l'Environnement</li>
+                <li>Sécurité et Qualité</li>
+            </ul>
+        </div>
+
+        <!-- Licences -->
+        <div class="program-card">
+            <div class="program-icon">
+                <i class="fas fa-book"></i>
+            </div>
+            <h3>Licences</h3>
+            <ul>
+                <li>Génie Mécanique</li>
+                <li>Informatique de Gestion</li>
+            </ul>
+        </div>
+
+        <!-- Cycle Préparatoire -->
+        <div class="program-card">
+            <div class="program-icon">
+                <i class="fas fa-flask"></i>
+            </div>
+            <h3>Cycle Préparatoire</h3>
+            <ul>
+                <li>Math-Physique</li>
+                <li>Physique-Technique</li>
+                <li>Physique-Chimie</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Témoignages étudiants Section -->
+<section class="testimonials">
+    <h2>Témoignages étudiants</h2>
+    <p class="subtitle">Découvrez ce que nos étudiants disent de leur expérience à IPSAS.</p>
+
+    <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"IPSAS m'a offert une formation de qualité et des opportunités incroyables. Je recommande vivement cette école !"</p>
+                <div class="student-info">
+                    <img src="https://via.placeholder.com/50" alt="Student 1" class="student-avatar">
+                    <div class="student-details">
+                        <h4>Ahmed Ben Ali</h4>
+                        <p>Étudiant en Génie Informatique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"Grâce à IPSAS, j'ai pu acquérir des compétences pratiques et me préparer pour le monde professionnel."</p>
+                <div class="student-info">
+                    <img src="https://via.placeholder.com/50" alt="Student 2" class="student-avatar">
+                    <div class="student-details">
+                        <h4>Fatma Bouazizi</h4>
+                        <p>Étudiante en Génie Civil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-content">
+                <p>"L'ambiance à IPSAS est géniale, et les professeurs sont toujours disponibles pour nous aider."</p>
+                <div class="student-info">
+                    <img src="https://via.placeholder.com/50" alt="Student 3" class="student-avatar">
+                    <div class="student-details">
+                        <h4>Mohamed Trabelsi</h4>
+                        <p>Étudiant en Génie Électromécanique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Vie Étudiante Section -->
+<section class="student-life">
+    <h2>Vie Étudiante</h2>
+    <p class="subtitle">Rejoignez nos clubs étudiants et vivez une expérience universitaire enrichissante.</p>
+
+    <div class="club-container">
+        <!-- Club d'Entreprenariat -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Club d'Entreprenariat</h3>
+            <p>Développez vos idées et lancez vos projets avec notre club dédié à l'innovation et à l'entreprenariat.</p>
+        </div>
+
+        <!-- Club Camping -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-campground"></i>
+            </div>
+            <h3>Club Camping</h3>
+            <p>Explorez la nature et participez à des aventures inoubliables avec notre club de camping.</p>
+        </div>
+
+        <!-- Club Robotique -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3>Club Robotique</h3>
+            <p>Plongez dans le monde de la robotique et participez à des compétitions passionnantes.</p>
+        </div>
+
+        <!-- Club Art et Culture -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <h3>Club Art et Culture</h3>
+            <p>Exprimez votre créativité et découvrez de nouvelles formes d'art avec notre club culturel.</p>
+        </div>
+
+        <!-- Club Sportif -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-futbol"></i>
+            </div>
+            <h3>Club Sportif</h3>
+            <p>Restez actif et participez à des activités sportives variées avec notre club dédié au sport.</p>
+        </div>
+
+        <!-- Club Scientifique -->
+        <div class="club-card">
+            <div class="club-icon">
+                <i class="fas fa-microscope"></i>
+            </div>
+            <h3>Club Scientifique</h3>
+            <p>Explorez les dernières avancées scientifiques et participez à des projets de recherche.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Partenaires Section -->
+<section class="partners">
+    <h2>Nos Partenaires</h2>
+    <p class="subtitle">Découvrez nos partenaires qui nous soutiennent dans notre mission.</p>
+
+    <div class="partner-carousel">
+        <div class="partner-track">
+            <!-- Partner Logos -->
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\images partenaire\sopal.png" alt="Partner 1">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\images partenaire\Logo.1662562673.svg" alt="Partner 2">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 3">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 4">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 5">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 6">
+            </div>
+            <!-- Duplicate the logos for infinite scrolling -->
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 1">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 2">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 3">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 4">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 5">
+            </div>
+            <div class="partner-logo">
+                <img src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\475784351_122183841680063381_7834993756957333838_n.jpg" alt="Partner 6">
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+    <footer>
+        <div class="footer-container">
+            <!-- Legal Links -->
+            <div class="footer-section">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions générales d'utilisation</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><a href="mailto:contact@universite.com">contact@universite.com</a></li>
+                    <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                    <li><a href="#">Campus Universitaire, Ville, Pays</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Université IPSAS. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
