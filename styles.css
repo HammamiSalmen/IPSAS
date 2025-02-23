@@ -602,6 +602,8 @@ footer {
     font-size: 40px;
     color: #f1c40f; /* Yellow icon color */
     margin-bottom: 20px;
+    
+
 }
 
 .club-card h3 {
@@ -1555,6 +1557,74 @@ i{
 }
 
 
+.admission-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.admission-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue */
+}
+
+.admission-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #eb5a47; /* Yellow */
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 100%;
+    }
+}
+
         /* ===== Section Styles ===== */
         .criteria-section {
             padding: 60px 20px;
@@ -1623,4 +1693,3 @@ i{
                 max-width: 100%;
             }
         }
-
