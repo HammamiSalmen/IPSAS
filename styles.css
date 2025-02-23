@@ -1533,3 +1533,23 @@ i{
     background-color: #2d3e50; /* Dark background for the container */
     margin: 20px auto;
 }
+/* General Icon Size Adjustment */
+.program-icon i,
+.club-icon i,
+.testimonial-content i,
+.social-icons i {
+    font-size: 48px; /* Adjust this value to make icons larger */
+}
+
+/* Specific Icon Adjustments (if needed) */
+.program-icon i {
+    font-size: 60px; /* Larger icons for program cards */
+}
+
+.club-icon i {
+    font-size: 50px; /* Larger icons for club cards */
+}
+
+.social-icons i {
+    font-size: 32px; /* Larger icons for social media links */
+}
