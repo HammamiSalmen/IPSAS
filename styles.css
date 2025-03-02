@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  } 
+
 /* Sliding Menu Styles */
 .sliding-menu {
     position: fixed;
@@ -142,7 +146,7 @@
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire hero section */
     z-index: -1; /* Places the video behind the content */
-}
+    }
 
 .hero-content {
     position: relative;
@@ -155,8 +159,9 @@
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 30px;
+    color: white;
 }
 
 .hero .btn {
@@ -252,7 +257,6 @@ header {
     background-color: #2c3e50;
     color: white;
     padding: 44px 0;
-    text-align: center;
 }
 
 header h1 {
@@ -602,6 +606,8 @@ footer {
     font-size: 40px;
     color: #f1c40f; /* Yellow icon color */
     margin-bottom: 20px;
+    
+
 }
 
 .club-card h3 {
@@ -1091,6 +1097,207 @@ a:hover {
     font-size: 1rem;
 }
 
+/* Presentation Section */
+.presentation-section {
+    display: flex;
+    justify-content: flex-end; /* Align presentation to the right */
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.presentation-content {
+    max-width: 50%; /* Adjust as needed */
+    text-align: left;
+}
+
+.presentation-content h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.presentation-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.presentation-image {
+    max-width: 40%; /* Adjust as needed */
+    text-align: center;
+}
+
+.presentation-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Histoire Section */
+.histoire-section {
+    display: flex;
+    justify-content: flex-start; /* Align histoire to the left */
+    align-items: center;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.histoire-content {
+    max-width: 50%; /* Adjust as needed */
+    text-align: left;
+}
+
+.histoire-content h2 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.histoire-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.histoire-image {
+    max-width: 40%; /* Adjust as needed */
+    text-align: center;
+}
+
+.histoire-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .presentation-section, .histoire-section {
+        flex-direction: column; /* Stack the content for smaller screens */
+        text-align: center;
+    }
+
+    .presentation-content, .histoire-content {
+        max-width: 100%;
+    }
+
+    .presentation-image, .histoire-image {
+        max-width: 100%;
+    }
+}
+
+/* Histoire et Engagements Section */
+.histoire-engagements {
+    display: flex;  /* Use flexbox for layout */
+    justify-content: space-between;  /* Space out the content */
+    align-items: center;  /* Vertically center the content */
+    padding: 40px 20px;
+}
+
+.histoire-content {
+    max-width: 90%;  /* Limit the width of the text */
+    text-align: left;  /* Align the text to the left */
+    margin-left: 99px;
+}
+
+.histoire-image {
+    max-width: 90%;  /* Limit the width of the image */
+    text-align: center;  /* Center the image */
+}
+
+.histoire-image img {
+    max-width: 100%;  /* Make sure the image scales to its container */
+    height: auto;  /* Keep the aspect ratio intact */
+    border-radius: 10px;  /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .histoire-engagements {
+        flex-direction: column;  /* Stack the content vertically on small screens */
+        text-align: center;
+    }
+
+    .histoire-content, .histoire-image {
+        max-width: 100%;
+    }
+
+    .histoire-image img {
+        max-width: 80%;  /* Adjust the image size for smaller screens */
+    }
+}
+
+.formation-under-header{
+    padding: 38px 38px 38px 38px;
+}
+
+/* ===== Section Styles ===== */
+.criteria-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.criteria-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue */
+}
+
+.criteria-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+    font-size: 40px;
+    color: #eb5a47; /* Yellow */
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    font-size: 24px;
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card {
+        max-width: 100%;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .formation-card {
@@ -1533,57 +1740,177 @@ i{
     background-color: #2d3e50; /* Dark background for the container */
     margin: 20px auto;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+/* General Icon Size Adjustment */
+.program-icon i,
+.club-icon i,
+.testimonial-content i,
+.social-icons i {
+    font-size: 48px; /* Adjust this value to make icons larger */
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+/* Specific Icon Adjustments (if needed) */
+.program-icon i {
+    font-size: 60px; /* Larger icons for program cards */
 }
 
-h1 {
+.club-icon i {
+    font-size: 50px; /* Larger icons for club cards */
+}
+
+.social-icons i {
+    font-size: 32px; /* Larger icons for social media links */
+}
+
+
+.admission-section {
+    padding: 60px 20px;
     text-align: center;
-    color: #333;
 }
 
-.image-container {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.admission-section h2 {
+    font-size: 32px;
     margin-bottom: 20px;
-    padding: 10px;
+    color: #2c3e50; /* Dark blue */
+}
+
+.admission-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.clickable-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.button-container {
-    margin-top: 10px;
+.feature-icon {
+    font-size: 40px;
+    color: #eb5a47; /* Yellow */
+    margin-bottom: 20px;
 }
 
-.button {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+.feature-card h3 {
+    font-size: 24px;
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 15px;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.feature-card p {
+    font-size: 16px;
+    color: #666;
 }
 
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        max-width: 100%;
+    }
+}
+#image-accueil{
+    position: absolute;
+}
+#logo1{
+    margin-left: 45%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+}
+.logo{
+    margin-left: 45%;
+    width: 10%;
+    height: 10%;  
+    text-align: center;
+    margin-top: -35px;
+}
+.image-accueil{
+    position: absolute;
+    margin-top: -35px;
+}
+.number-container {
+    font-size: 5rem;
+    color: #333;
+    transition: all 0.5s ease;
+    margin-right: 80px;
+  }
+.number-container{
+    display: flex;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.number-container i {
+    font-size: 40px;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.iconn {
+    margin-left: 9%;
+}
+#signin{
+    margin-left: 90%;
+    position: absolute;
+    margin-top: 25px;
+}
+#flagfr{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 86%;
+    margin-top: 34px;
+    border-radius: 6px;
+}
+#flagen{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 83%;
+    margin-top: 34px;
+    border-radius: 6px;
+}
+.flagfr1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 29%;
+    margin-top: -7px;
+    border-radius: 6px;
+}
+.flagen1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 32%;
+    margin-top: -7px;
+    border-radius: 6px;
+}
+.signin1{
+    margin-left: 90%;
+    position: absolute;
+    margin-top: -15px;
+}
 .main-tsawer {
     display: flex;
 }
@@ -1625,5 +1952,15 @@ figcaption{
     animation-duration: 12s;
     scale: 1.12;
 }
-
-
+.chat img{
+    width: 50px;
+    height: 50px;
+}
+.chat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}

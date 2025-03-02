@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA with Keycloak</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/keycloak-js/26.0.7/keycloak.min.js"></script> <!-- Load Keycloak.js from CDN -->
+    <script src="keycloak.js" defer></script> <!-- Load your keycloak.js -->
+    <script src="app.js" defer></script> <!-- Load your app.js after keycloak.js -->
+</head>
+<body>
+    <h1>My Simple SPA</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+        <button id="login-btn" onclick="login()">Sign In</button>
+        <button id="logout-btn" style="display:none;" onclick="logout()">Sign Out</button>
+    </nav>
+    <div id="content"></div>
+</body>
+</html>

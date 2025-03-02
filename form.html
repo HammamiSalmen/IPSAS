@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Candidature</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="form-image">
+
+     <!-- Menu Toggle Button -->
+     <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <header>
+        <div  class="header-bar">
+            <button class="signin1"> sign in  </button>
+            <img src="sansback.png" alt="" class="image-accueil" srcset="">
+            <a href="Accueil.html"> <img src="logo.png" class="logo" alt="" srcset=""> </a>
+            <img  src="Flag_of_France.svg.jpg" class="flagfr1" alt="" srcset="">
+            <img  src="Flag_of_the_United_Kingdom_(1-2).svg.png" class="flagen1" alt="">
+    
+    <!-- Sliding Menu -->
+    <nav id="sliding-menu" class="sliding-menu">
+        <ul>
+            <li><a href="acceil.html">Accueil</a></li>
+            <li><a href="propos.html">À propos</a>
+                <ul class="dropdown">
+                    <li><a href="present.html">Présentation</a></li>
+                    <li><a href="mission.html">Mission, vision et valeurs</a></li>
+                    <li><a href="histoire.html">Histoire et engagements</a></li>
+                    <li><a href="equipe.html">Équipe (fonction, contact IPSAS)</a></li>
+                    <li><a href="parte.html">Partenaires</a></li>
+                </ul>
+            </li>
+            <li><a href="nosformation.html">Nos Formations</a>
+                <ul class="dropdown">
+                    <li><a href="#">Cycle d'Ingénieurs : Génie Pétrolier, Informatique, Civil, Industriel, Électromécanique, Électrotechnique, Énergétique…</a></li>
+                    <li><a href="#">Masters Professionnels : Génie de l'Environnement, Sécurité et Qualité</a></li>
+                    <li><a href="#">Licences : Génie Mécanique, Informatique de Gestion</a></li>
+                    <li><a href="#">Cycle Préparatoire : Math-Physique, Physique-Technique, Physique-Chimie</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vie Étudiante</a>
+                <ul class="dropdown">
+                    <li><a href="#">Activités et événements (calendrier interactif)</a></li>
+                    <li><a href="#">Clubs étudiants (création et adhésion)</a></li>
+                    <li><a href="#">Placement international et stages</a></li>
+                    <li><a href="#">Témoignages étudiants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Admission</a>
+                <ul class="dropdown">
+                    <li><a href="#">Critères et processus d'admission</a></li>
+                    <li><a href="#">Frais de scolarité</a></li>
+                    <li><a href="#">FAQ Admission</a></li>
+                    <li><a href="#">Paiement en ligne (pour les étudiants tunisiens et étrangers)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Podcast POLY'CAST</a></li>
+            <li><a href="#">Ressources</a></li>
+            <li><a href="#">Actualités et Événements</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Espace Membres</a></li>
+        </ul>
+    </nav>
+</header>
+
+<form action="" method="post">
+
+
+
+    <h2>Nouvelle Candidature</h2>
+
+<div class="container">
+    <fieldset>
+    <select id="filiere" class="select2">
+        <option value="">Choisir la filière</option>
+        <option value="genie_civil">Cycle d'Ingénieurs en Génie Civil</option>
+        <option value="genie_info">Cycle d'Ingénieurs en Génie Informatique</option>
+        <option value="genie_electromeca">Cycle d'Ingénieurs en Génie Électromécanique</option>
+        <option value="architecte">Cycle d'Ingénieurs en Génie Électrotechnique</option>
+        <option value="genie_petrolier">Cycle d'Ingénieurs en Génie Pétrolier</option>
+        <option value="genie_petrolier">Cycle d'Ingénieurs en Génie Industriel</option>
+        <option value="genie_petrolier">Cycle d'Ingénieurs en Génie Énergétique</option>
+    </select>
+    <select id="filiere" class="select2">
+        <option value="">Choisir la niveau</option>
+        <option value="">1 ère Année</option>
+        <option value="">2 ème Année</option>
+        <option value="">3 ème Année</option>
+    </select>
+</fieldset>
+
+
+    
+
+    <fieldset>
+        <legend>Informations candidat</legend>
+        <label>Nom de famille *</label>
+        <input type="text" required>
+        
+        <label>Prénom *</label>
+        <input type="text" required>
+
+        <label>Date de naissance *</label>
+        <input type="date" required>
+
+        <label>Lieu de naissance *</label>
+        <input type="text" required>
+
+        <label>Genre *</label>
+        <select>
+            <option ></option>
+            <option>Homme</option>
+            <option>Femme</option>
+        </select>
+
+        <label>CIN / Passeport *</label>
+        <input type="text" required>
+        <label>Date de délivrance *</label>
+        <input type="date" required>
+        <label>lieu de délivrance *</label>
+        <input type="text" required>
+        <select id="filiere" class="select2">
+            <option value="">Nationalité *</option>
+            <option value="">tunisien(ne)</option>
+            <option value="">Français(e)</option>
+            <option value="">suisse</option>
+            <option value="">belge</option>
+            <option value="">Allemand(e)</option>
+            <option value="">Italien(ne)</option>
+            <option value="">portugais(e)</option>
+            <option value="">marocain(e)</option>
+            <option value="">algérien(ne)</option>
+            <option value="">mauritanien(ne)</option>
+            <option value="">soudanais(e)</option>
+            <option value="">Malien(ne)</option>
+            <option value="">libyen(ne)</option>
+            <option value="">Sénégalais(e)</option>
+            <option value="">Ivoirien(ne)</option>
+            
+        </select>
+        <label>num tél *</label>
+        <input type="tel" required>
+        <label>E-mail *</label>
+        <input type="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informations parents</legend>
+        <label>Nom Parent *</label>
+        <input type="text" required>
+
+        <label>Prénom Parent *</label>
+        <input type="text" required>
+
+        <label>Téléphone Parent *</label>
+        <input type="tel" required>
+
+        <label>E-mail Parent</label>
+        <input type="email">
+    </fieldset>
+
+    <fieldset>
+        <legend>Cursus académique du candidat</legend>
+        <h4>Cursus Secondaire - BAC:</h4>
+        <label>Nature du baccalauréat *</label>
+        <input type="text" required>
+
+        <label>Année d'obtention *</label>
+        <input type="text" required>
+
+        <label>Mention *</label>
+        <input type="text" required>
+
+        <h4>Cursus Universitaire - Dernier Certificat:</h4>
+        
+        <select>
+            <option >Intitulé du diplôme</option>
+            <option>Licence</option>
+            <option>Master</option>
+            <option>Ingénieurie</option>
+            <option>diplôme Cycle préparatoire</option>
+        </select>
+
+        <label>Spécialité</label>
+        <input type="text">
+    </fieldset>
+
+    <button class="submit-btn">Je postule</button>
+</div>
+
+</form>
+
+
+<script src="C:\Users\louat\OneDrive\Desktop\final site HackAthon\script.js"></script>
+
+</body>
+</html>

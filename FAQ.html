@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>FAQ - Admission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<!-- Header -->
+         <!-- Menu Toggle Button -->
+         <button id="menu-toggle" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <header>
+            <div  class="header-bar">
+    
+                <img src="sansback.png" alt="" class="image-accueil" srcset="">
+                <a href="Accueil.html"> <img src="logo.png" class="logo" alt="" srcset=""> </a>
+        <!-- Sliding Menu -->
+        <nav id="sliding-menu" class="sliding-menu">
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="A-propos.html">À propos</a>
+                    <ul class="dropdown">
+                        <li><a href="Présentation.html">Présentation</a></li>
+                        <li><a href="Mission.html">Mission, vision et valeurs</a></li>
+                        <li><a href="Histoire.html">Histoire et engagements</a></li>
+                        <li><a href="Équipe.html">Équipe</a></li>
+                        <li><a href="Partenaires.html">Partenaires</a></li>
+                    </ul>
+                </li>
+                <li><a href="Formations.html">Nos Formations</a>
+                    <ul class="dropdown">
+                        <li><a href="Ingénieurs.html">Cycle d'Ingénieurs</a></li>
+                        <li><a href="Masters.html">Masters Professionnels</a></li>
+                        <li><a href="Licences.html">Licences</a></li>
+                        <li><a href="Préparatoire.html">Cycle Préparatoire</a></li>
+                    </ul>
+                </li>
+                <li><a href="Vie.html">Vie Étudiante</a>
+                    <ul class="dropdown">
+                        <li><a href="Activités.html">Activités et événements</a></li>
+                        <li><a href="Clubs.html">Clubs étudiants</a></li>
+                        <li><a href="Placement.html">Placement international et stages</a></li>
+                        <li><a href="Témoignages.html">Témoignages étudiants</a></li>
+                    </ul>
+                </li>
+                <li><a href="Admission.html">Admission</a>
+                    <ul class="dropdown">
+                        <li><a href="Critères.html">Critères et processus d'admission</a></li>
+                        <li><a href="Frais.html">Frais de scolarité</a></li>
+                        <li><a href="FAQ.html">FAQ Admission</a></li>
+                        <li><a href="Paiement.html">Paiement en ligne</a></li>
+                    </ul>
+                    <li><a href="Podcast.html">Podcast POLY'CAST</a></li>
+                <li><a href="Ressources.html">Ressources</a></li>
+                <li><a href="Actualités.html">Actualités et Événements</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Espace.html">Espace Membres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<div class="formation-under-header">       <h1>Frequently Asked Questions - Admission</h1>
+        <p>Find answers to common questions about our admission process.</p>
+       
+    
+    <div class="faq-container">
+        <div class="space-y-4">
+            <div class="faq-card" onclick="toggleFAQ(this)">
+                <div class="faq-question">1. What are the admission requirements? <span>+</span></div>
+                <div class="faq-answer">Admission requirements vary by program. Generally, applicants need to provide academic transcripts, standardized test scores, and a personal statement.</div>
+            </div>
+            <div class="faq-card" onclick="toggleFAQ(this)">
+                <div class="faq-question">2. When is the application deadline? <span>+</span></div>
+                <div class="faq-answer">The deadlines depend on the program. Typically, fall admission deadlines are in early spring, while spring admissions close in the fall.</div>
+            </div>
+            <div class="faq-card" onclick="toggleFAQ(this)">
+                <div class="faq-question">3. How can I apply for financial aid? <span>+</span></div>
+                <div class="faq-answer">You can apply for financial aid through the university's financial aid office. Scholarships, grants, and loan options are available.</div>
+            </div>
+            <div class="faq-card" onclick="toggleFAQ(this)">
+                <div class="faq-question">4. Is there an application fee? <span>+</span></div>
+                <div class="faq-answer">Yes, most programs require an application fee. However, fee waivers may be available for eligible applicants.</div>
+            </div>
+            <div class="faq-card" onclick="toggleFAQ(this)">
+                <div class="faq-question">5. Can I apply as an international student? <span>+</span></div>
+                <div class="faq-answer">Yes, international students are welcome to apply. Additional requirements include English proficiency tests and visa documentation.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
